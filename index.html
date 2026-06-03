@@ -47,7 +47,7 @@
                         Tucheng, New Taipei City · +886-926-358-139 ·
                         <a href="mailto:zawqsx0319@email.com">zawqsx0319@email.com</a>
                     </div>
-                    <p class="lead mb-5">I am a data analysis with 2 years of work experience.
+                    <p class="lead mb-5">I am a backend engineer with 3 years of work experience.
                         Graduated from Taipei University with a Master's degree in Statistics.
                         More than 6 years experience in Statistics, 3+ years in AI and Data analysis.
                         A high responsibility and Data-savvy person. Have good communication
@@ -67,13 +67,23 @@
                     <h2 class="mb-5">Experience</h2>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
+                            <h3 class="mb-0">Backend Engineer</h3>
+                            <div class="subheading mb-3">MANGA SHOPPING GROUP</div>
+                            <p>
+                            Worked as a backend engineer at a startup e-commerce company focused on Japanese products for the US market. Developed and maintained RESTful APIs using Flask on GCP, managed product databases on Cloud SQL (MySQL 8.4), and built a web crawler system decoupled with RabbitMQ into microservices for horizontal scalability. Designed messaging systems including WebSocket-based chat rooms with Redis caching, email notifications via SendGrid, and SMS integrations. Developed eBay platform integration for product listing management and order risk monitoring.
+                            </p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">Sep 2024 - Mar 2026</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
                             <h3 class="mb-0">Data Integration Engineer</h3>
                             <div class="subheading mb-3">Unimicron technology Crop.</div>
                             <p>
                             Belongs to the company's Smart Manufacturing department, primarily utilizing factory-end production data to develop programs and establish automated systems, including AI image recognition for defect detection, Machine Learning prediction for production parameters, statistical analysis and visualization dashboards established on web, etc.
                             </p>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">Jun 2022 - Present</span></div>
+                        <div class="flex-shrink-0"><span class="text-primary">Jun 2022 - Sep 2024</span></div>
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
@@ -126,7 +136,7 @@
                         <li class="list-inline-item"><i class="fa-solid fa-database"></i></li>
                         <li class="list-inline-item"><i class="fab fa-docker"></i></li>
                         <li class="list-inline-item"><img width="52" height="52" src="assets/img/django-showcase-1.png"/></li>
-                        
+                        <li class="list-inline-item"><i class="fab fa-google"></i></li>
                     </ul>
                     <ul class="fa-ul mb-0">
                         <li>
@@ -139,7 +149,7 @@
                         </li>
                         <li>
                             <span class="fa-li"><i class="fas fa-check"></i></span>
-                            MSSQL
+                            MSSQL / MySQL
                         </li>
                         <li>
                             <span class="fa-li"><i class="fas fa-check"></i></span>
@@ -148,6 +158,18 @@
                         <li>
                             <span class="fa-li"><i class="fas fa-check"></i></span>
                             Django / Flask
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            GCP (Cloud SQL, Cloud Run)
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            RabbitMQ
+                        </li>
+                        <li>
+                            <span class="fa-li"><i class="fas fa-check"></i></span>
+                            Redis
                         </li>
                     </ul>
                 </div>
@@ -159,15 +181,51 @@
                     <h2 class="mb-5">Projects</h2>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
+                            <h3 class="mb-0">Product Crawler Microservice System</h3>
+                            <div class="subheading mb-3">MANGA SHOPPING GROUP</div>
+                            <p>
+                                Built a scalable product data pipeline for a Japan-to-US e-commerce platform. Designed and maintained a Cloud SQL (MySQL 8.4) product database with indexing and partitioning strategies to optimize query performance, managed schema versioning via Flask-Migrate.
+                                <br><br>
+                                Decoupled the web crawler into microservices using RabbitMQ as a message broker, enabling independent scaling of each crawling stage. Containerized all services with Docker and implemented version control with GitLab. Exposed product data through a RESTful API and provided a shopping cart API to support downstream payment and order flows.
+                            </p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">Sep 2024 - Mar 2026</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Messaging & Notification System</h3>
+                            <div class="subheading mb-3">MANGA SHOPPING GROUP</div>
+                            <p>
+                                Developed a comprehensive messaging platform covering multiple communication channels. Built a WebSocket-based chat room API with Redis for real-time message caching and MySQL for persistent chat history, supporting product-level and order-level conversations between customers and customer service agents.
+                                <br><br>
+                                Integrated SendGrid for transactional email notifications with Bootstrap-styled templates. Implemented in-site message notifications and SMS alerts via third-party integrations. Built a customer service backend to manage conversation states and allow agents to respond through the chat API.
+                            </p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">Sep 2024 - Mar 2026</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">eBay Integration & Order Management System</h3>
+                            <div class="subheading mb-3">MANGA SHOPPING GROUP</div>
+                            <p>
+                                Developed an internal eBay platform integration system that allows the company to manage product listings directly from an internal dashboard, synchronized with the company's eBay seller account. Built a unified external product inventory management system to control listing and delisting across platforms.
+                                <br><br>
+                                Integrated company-internal purchasing and logistics status into eBay order tracking, enabling risk monitoring and automated alerts for order anomalies.
+                            </p>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">Sep 2024 - Mar 2026</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
                             <h3 class="mb-0">Similarity - Defect trend inspect system</h3>
                             <div class="subheading mb-3">Unimicron technology Crop.</div>
                             <p>
-                                The defect trend inspect system aim to detect defects in specific trends. 
-                                To find out the special trends automatically, training a classifier with resnet50, and it enable to 
+                                The defect trend inspect system aim to detect defects in specific trends.
+                                To find out the special trends automatically, training a classifier with resnet50, and it enable to
                                 classify the trends into six categories with accuracy rate as high as 99%.
                             </p>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">Mar 2022 - Present</span></div>
+                        <div class="flex-shrink-0"><span class="text-primary">Mar 2024 - Sep 2024</span></div>
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
@@ -185,7 +243,7 @@
                                 version control with the gitlab and continous deployment with gitlab-runner.
                             </p>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">Nov 2022 - Present</span></div>
+						<div class="flex-shrink-0"><span class="text-primary">Jun 2023 - Sep 2024</span></div>
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
@@ -204,7 +262,7 @@
                                 it provide the statistical charts and business logistic report on the web. 
                             </p>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">Jun 2022 - Present</span></div>
+						<div class="flex-shrink-0"><span class="text-primary">Nov 2022 - Sep 2024</span></div>
                     </div>
 
                 </div>
